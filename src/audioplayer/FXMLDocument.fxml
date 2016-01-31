@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="252.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="audioplayer.FXMLDocumentController">
+   <children>
+      <Button fx:id="start" layoutX="92.0" layoutY="59.0" mnemonicParsing="false" onAction="#NewSong" text="New Song" />
+      <Button fx:id="stop" layoutX="107.0" layoutY="192.0" mnemonicParsing="false" onAction="#Pause" text="Stop" />
+      <Label fx:id="playing" layoutX="6.0" layoutY="6.0" text="Playing: " wrapText="true" />
+      <Button fx:id="play" layoutX="109.0" layoutY="102.0" mnemonicParsing="false" onAction="#Play" text="Play" />
+      <Slider fx:id="volume" layoutX="56.0" layoutY="315.0" showTickLabels="true" showTickMarks="true" value="50.0" />
+      <Label layoutX="106.0" layoutY="268.0" text="Volume" />
+      <Button fx:id="pause" layoutX="103.0" layoutY="144.0" mnemonicParsing="false" onAction="#pauseSong" text="Pause" />
+      <CheckBox fx:id="loop" layoutX="102.0" layoutY="235.0" mnemonicParsing="false" onAction="#Loop" text="Loop" />
+   </children>
+</AnchorPane>
